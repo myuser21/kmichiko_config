@@ -11,4 +11,4 @@ spec:
       port: 8888
   selector:
     app: kmichiko-app
-  type: ClusterIP
+  type: NodePort

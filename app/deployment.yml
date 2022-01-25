@@ -17,7 +17,7 @@ spec:
         app: hello-app
     spec:
       containers:
-      - image: my-user:hello-app:v1
+      - image: hellousermy11/kmichiko-app:v1
         name: hello-app
         ports:
         - containerPort: 8888

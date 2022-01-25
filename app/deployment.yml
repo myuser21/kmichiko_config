@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-app
+  name: kmichiko-app
   labels:
-    app: hello-app
+    app: kmichiko-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-app
+      app: kmichiko-app
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: hello-app
+        app: kmichiko-app
     spec:
       containers:
       - image: hellousermy11/kmichiko-app:v1
-        name: hello-app
+        name: kmichiko-app
         ports:
         - containerPort: 8888

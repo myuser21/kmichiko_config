@@ -17,7 +17,7 @@ spec:
         app: kmichiko-app
     spec:
       containers:
-      - image: hellousermy11/kmichiko-app:v2
+      - image: hellousermy11/kmichiko-app:v1
         name: kmichiko-app
         ports:
         - containerPort: 8888

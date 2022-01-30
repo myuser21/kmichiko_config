@@ -9,6 +9,7 @@ spec:
     - protocol: TCP
       name: http
       port: 8888
+      targetPort: 8888
   selector:
     app: kmichiko-app
-  type: NodePort
+  type: LoadBalancer
